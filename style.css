@@ -1,0 +1,138 @@
+body {
+  background-color: rgb(209, 142, 53);
+  display: flex;
+  justify-content: center;
+}
+
+.ticTacToeCon {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.header {
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-size: 90px;
+  font-weight: 1000;
+}
+
+#ticTacToeModule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gameboard {
+  width: 700px;
+  height: 700px;
+  background: rgb(239, 190, 115);
+  border: 5px solid rgb(92, 57, 0);
+  border-radius: 90px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.gameboard > li {
+  list-style-type: none;
+  font-size: 180px;
+  text-align: center;
+  font-family: sans-serif;
+  color: rgb(253, 235, 209);
+}
+
+.gameboard > li:nth-child(1),
+.gameboard > li:nth-child(2),
+.gameboard > li:nth-child(4),
+.gameboard > li:nth-child(5),
+.gameboard > li:nth-child(7),
+.gameboard > li:nth-child(8) {
+  border-right: 10px solid rgb(92, 57, 0);
+}
+
+.gameboard > li:nth-child(4),
+.gameboard > li:nth-child(5),
+.gameboard > li:nth-child(6),
+.gameboard > li:nth-child(7),
+.gameboard > li:nth-child(8),
+.gameboard > li:nth-child(9) {
+  border-top: 10px solid rgb(92, 57, 0);
+}
+
+.buttomBar {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.playerTag {
+  display: flex;
+  width: 150px;
+  height: 80px;
+  font-size: 30px;
+  background: rgb(239, 190, 115);
+  border-radius: 30px;
+  border: 0px;
+  border: 8px solid rgb(92, 57, 0);
+  color: rgb(253, 235, 209);
+  font-weight: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.restartBtn {
+  width: 250px;
+  height: 100px;
+  background: rgb(239, 190, 115);
+  border-radius: 30px;
+  border: 0px;
+  border: 8px solid rgb(92, 57, 0);
+  color: rgb(253, 235, 209);
+  font-size: 50px;
+  font-weight: 1000px;
+  text-align: center;
+}
+
+.twoPlayerBtn {
+  margin-top: 350px;
+}
+
+.playerNameInput {
+  width: 250px;
+  height: 100px;
+  background: rgb(239, 190, 115);
+  border-radius: 30px;
+  border: 0px;
+  border: 8px solid rgb(92, 57, 0);
+  color: rgb(253, 235, 209);
+  font-size: 50px;
+  font-weight: 1000px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.submitBtn {
+  margin-top: 120px;
+}
+
+.winDisplay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.604);
+  visibility: hidden;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 50px;
+  font-weight: 1000;
+  padding-top: 500px;
+}
